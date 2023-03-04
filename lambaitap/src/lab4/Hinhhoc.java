@@ -7,7 +7,7 @@ package lab4;
 import java.util.Scanner;
 
 public class Hinhhoc {
-  public final float Pi=3.14f;
+   public final float Pi=3.14f;
    public String ten;
    public float chuVi;
    public float dienTich;
@@ -16,16 +16,16 @@ public class Hinhhoc {
     public Hinhhoc(){
         
     }
-    public String xuatTen(String ten){
-        return ten;
+    public void xuatTen(){
+       System.out.print(ten);
     }
-    public float inchuVi(float chuVi){
-        return chuVi;
+    public void inchuVi(){
+       System.out.print(chuVi);
     }
-    public float indienTich(float dienTich){
-        return dienTich;
+    public void indienTich(){
+      System.out.print(dienTich);
     }
-    public float intheTich(float theTich){
-        return theTich;
+    public void intheTich(){
+        System.out.print(theTich);
     }
 }
