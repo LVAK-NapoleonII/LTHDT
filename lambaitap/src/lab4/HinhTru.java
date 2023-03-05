@@ -8,7 +8,7 @@ package lab4;
 public class HinhTru extends Hinhtron {
     public float chieucao;
     public HinhTru(){
-        
+        ten= "hinh tru";
     }
     public void nhapChieuCao(){
         chieucao=input.nextFloat();

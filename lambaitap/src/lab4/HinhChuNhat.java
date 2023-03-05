@@ -11,7 +11,7 @@ public class HinhChuNhat extends Hinhhoc {
     public float dai;
     public float rong;
     public HinhChuNhat(){
-        
+        ten="hinh chu nhat";
     }
     public void nhapChieuDai(){
         dai=input.nextFloat();

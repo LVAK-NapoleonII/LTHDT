@@ -11,5 +11,6 @@ public class main {
        k.nhapBankinh();
         k.tinhChuvi();
         k.inchuVi();
+        k.xuatTen();
     }
 }

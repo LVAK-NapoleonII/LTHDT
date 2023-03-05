@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class HinhVuong extends HinhChuNhat{
     public HinhVuong(){
-        
+        ten= "hinh vuong";
     }
     public void nhapCanh(){
        dai=input.nextFloat();

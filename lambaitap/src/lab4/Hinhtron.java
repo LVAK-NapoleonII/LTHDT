@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Hinhtron extends Hinhhoc {
     private float bankinh;
     public Hinhtron(){
-        
+        ten="hinh tron";
     }
     public void nhapBankinh(){
       bankinh= input.nextFloat();
