@@ -12,5 +12,7 @@ public class main {
         k.tinhChuvi();
         k.inchuVi();
         k.xuatTen();
+        k.tinhDientihc();
+        k.indienTich();
     }
 }

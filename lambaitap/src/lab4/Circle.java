@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 
 public class Circle {
-    double radius;
+    private double radius;
     private String color;
     public Circle(double radius, String color) {
         this.radius = radius;
