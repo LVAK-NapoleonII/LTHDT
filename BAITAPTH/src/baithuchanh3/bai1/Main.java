@@ -32,6 +32,7 @@ public class Main {
         o.addLineItem(1, p5);
         o.addLineItem(1, p6);
         o.addLineItem(1, p7);
+        System.out.println("Ma HD" + o.getOrderID());
         System.out.println("Ngay lap hoa don: "+LocalDate.now());
         o.xuat();  
         System.out.println("Tong tien thanh toan: "+ o.caloTatalCharge());

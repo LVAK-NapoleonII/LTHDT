@@ -13,7 +13,8 @@ import java.util.ArrayList;
  */
 public class Order {
 
-    private int orderID, count;
+    private int orderID = 1;
+    private int  count;
     private LocalDate orderDate;
     ArrayList<OrderDetail> lineItems;
 
