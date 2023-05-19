@@ -1,61 +1,78 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package baithuchanh3.bai2;
 
-/**
- *
- * @author kle47
- */
-public class Hangdienmay extends Hanghoa {
 
-    private int thoigianbaohanh;
-    private float congsuat;
+import java.util.Scanner;
 
-    public Hangdienmay(int thoigianbaohanh, float congsuat, String mahang, String tenhang, int soluongton, double dongia) {
-        super(mahang, tenhang, soluongton, dongia);
-        this.thoigianbaohanh = thoigianbaohanh;
-        this.congsuat = congsuat;
+public class HangDienMay extends HangHoa {
+
+    private int thangBH;
+    private double congSuat;
+
+
+
+    public HangDienMay() {
     }
 
-    public int getThoigianbaohanh() {
-        return thoigianbaohanh;
+
+    public HangDienMay(int thangBH, double congSuat, String maHang, String tenHang, double soLuongTon, double donGia) {
+        super(maHang, tenHang, soLuongTon, donGia);
+        this.thangBH = thangBH;
+        this.congSuat = congSuat;
     }
 
-    public void setThoigianbaohanh(int thoigianbaohanh) {
-        if (this.thoigianbaohanh > 0) {
-            this.thoigianbaohanh = thoigianbaohanh;
-        }System.out.println("loi");
+    public int getThangBH() {
+        return thangBH;
     }
 
-    public float getCongsuat() {
-        return congsuat;
+    public void setThangBH(int tgBH) {
+        if (thangBH > 0 && thangBH ==0)
+            this.thangBH = thangBH;
+        else
+            System.out.println("Thang bao hanh khong hop le!\n"
+                    + "Vui long nhap lai!");
     }
 
-    public void setCongsuat(float congsuat) {
-        if(this.congsuat>0){
-             this.congsuat = congsuat;
-        }System.out.println("loi");       
+    public double getCongSuat() {
+        return congSuat;
     }
 
-    public double getDongia() {
-        return dongia;
+    public void setCongSuat(double congSuat) {
+        if (congSuat>0)
+            this.congSuat = congSuat;
+        else
+            System.out.println("Cong suat khong hop le!\n"
+                    + "Vui long nhap lai!");
     }
-
-    public void setDongia(double dongia) {
-        this.dongia = dongia;
+    
+    @Override
+    public void VAT() {
+         double vat = donGia + ((donGia*10)%100);
     }
 
     @Override
-    public double phiVAT() {
-        return dongia * 0.1;
+    public void DanhGia() {
+        if (soLuongTon < 3)
+            System.out.println("Muc do ban: Ban duoc!");
     }
 
     @Override
-    public String toString() {
-        return "Hangdienmay{" + "thoigianbaohanh=" + thoigianbaohanh + ", congsuat=" + congsuat + '}';
+    public void nhap() {
+        super.nhap(); 
+        Scanner sc = new Scanner (System.in);
+        do {
+            System.out.println("Nhap thang bao hanh: ");
+            thangBH = sc.nextInt();
+        } while (thangBH < 0);
+        
+        do {
+            System.out.println("Nhap cong suat: ");
+            congSuat = sc.nextDouble();
+        } while (congSuat < 0);
+        
     }
 
+    
+    
+    
     
 }
